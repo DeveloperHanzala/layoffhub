@@ -1,0 +1,119 @@
+.polls-container {
+    width: 100%;
+  }
+
+  .polls-text {
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    padding: 4px;
+    
+    border-radius: 7px;
+    text-align: center;
+}
+
+  .polls-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+      background-color: #f8f9fa;
+      padding: 0 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+  }
+
+  .polls-content.open {
+    max-height: 650px !important; 
+    padding: 10px;
+}
+.hov{
+
+    color: #007bff;
+}
+.hov:hover{
+    color: #00ff0db2;
+}
+.hov1{
+
+    color: #007bff;
+}
+.hov1:hover{
+    color: #ff0000b2;
+}
+/* Polls.css */
+
+
+/* Responsive grid for rows and columns */
+
+.card {
+    margin-bottom: 1rem;
+    z-index: 1 !important;
+}
+
+/* Adjust card and image size */
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.profile-img {
+    height: auto;
+}
+
+/* Responsive buttons */
+.btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+}
+
+.btnn, .btn-09 {
+    width: 100%;
+}
+
+/* Make polls section responsive */
+
+
+
+
+
+/* Adjust footer and sidebar */
+.footer, .back4 {
+    padding: 1rem;
+}
+
+/* Ensure all text aligns well on different screen sizes */
+.text-center {
+    text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+        justify-content: end;
+    }
+    .col-md-9, .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .back4 {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .btnn, .btn-09 {
+        font-size: 0.8rem;
+    }
+    .tags {
+        font-size: 1rem;
+    }
+}
+.caption-text {
+    font-size: small;
+    column-count: 2; /* Split the text into two columns */
+    column-gap: 20px; /* Add some space between the columns */
+    word-break: break-word; /* Break words if they are too long */
+  }
+  

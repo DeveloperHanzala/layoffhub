@@ -1,0 +1,43 @@
+/* Ensure the parent container can grow */
+.container {
+    min-height: auto; /* or a more specific height if needed */
+    overflow: visible;
+}
+
+/* Ensure children are displayed correctly */
+.row, .col-12 {
+    flex-wrap: nowrap; /* prevents wrapping of items */
+    overflow: visible; /* ensure all content is shown */
+}
+
+/* Adjust individual answer containers */
+.answer-container {
+    max-height: none; /* allows full height */
+    overflow: visible; /* ensures no content is hidden */
+}
+
+/* Make sure images and text aren't overflowing */
+.img-fluid {
+    max-width: 100%; /* keep images within their containers */
+    height: auto; /* scale the height accordingly */
+}
+
+.mt-3 {
+    margin-top: 1rem; /* ensure proper spacing */
+}
+
+/* Button adjustments */
+.btn {
+    overflow: visible;
+    white-space: nowrap; /* prevents text from wrapping */
+}
+/* Example for adjusting visibility and preventing overflow issues */
+.card-text, .card-title, .answer-text {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    hyphens: auto;
+  }
+.answer-container {
+    max-height: 500px; /* set based on your layout */
+    overflow-y: auto; /* adds a vertical scrollbar if content exceeds max-height */
+}
